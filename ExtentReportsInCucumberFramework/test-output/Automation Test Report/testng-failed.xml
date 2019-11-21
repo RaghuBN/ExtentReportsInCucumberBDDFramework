@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Automation Test Report]">
+  <listeners>
+    <listener class-name="Listeners.ITestListenerImpl"/>
+  </listeners>
+  <test name="Automation Test Report">
+    <classes>
+      <class name="testRunner.TestRunner"/>
+    </classes>
+  </test> <!-- Automation Test Report -->
+  <test name="Automation Test Report(failed)">
+    <classes>
+      <class name="testRunner.TestRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="feature" invocation-numbers="0 1 2 3"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- testRunner.TestRunner -->
+    </classes>
+  </test> <!-- Automation Test Report(failed) -->
+</suite> <!-- Failed suite [Automation Test Report] -->
